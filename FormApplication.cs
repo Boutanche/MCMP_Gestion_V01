@@ -17,7 +17,11 @@ namespace MCMP_Gestion_V01
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Avant fermeture de l'application / Demander confirmation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormApplication_FormClosing(object sender, FormClosingEventArgs e)
         {
             //Init var :
@@ -34,10 +38,14 @@ namespace MCMP_Gestion_V01
             }
             
         }
-
-        private void FormApplication_FormClosed(object sender, FormClosedEventArgs e)
+        /// <summary>
+        /// Bouton Quitter l'application :
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button_ParamQuit_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
     }
 }
