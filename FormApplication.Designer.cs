@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormApplication));
             this.tableLayoutPanel_MainPage = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel_MenuAdmin = new System.Windows.Forms.TableLayoutPanel();
@@ -49,16 +50,31 @@
             this.Activité = new System.Windows.Forms.TabPage();
             this.Adhérents = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel_Head = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label_SearchDate = new System.Windows.Forms.Label();
+            this.dateTimePicker_Activité = new System.Windows.Forms.DateTimePicker();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label_SelectLang = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label_Title = new System.Windows.Forms.Label();
             this.tableLayoutPanel_Search = new System.Windows.Forms.TableLayoutPanel();
             this.textBox_Search = new System.Windows.Forms.TextBox();
             this.label_Search = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label_SelectLang = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label_SearchDate = new System.Windows.Forms.Label();
-            this.dateTimePicker_Activité = new System.Windows.Forms.DateTimePicker();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cda35_bd2DataSet1 = new MCMP_Gestion_V01.cda35_bd2DataSet1();
+            this.aCTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.aCTTableAdapter = new MCMP_Gestion_V01.cda35_bd2DataSet1TableAdapters.ACTTableAdapter();
+            this.idactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datedebutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datefinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateinscLimitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.daterdvDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lieurdvDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lieudestiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKtypeactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKadhcreateurDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKadhresponDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel_MainPage.SuspendLayout();
             this.tableLayoutPanel_MenuAdmin.SuspendLayout();
             this.groupBox_GestionParam.SuspendLayout();
@@ -67,10 +83,14 @@
             this.flowLayoutPanel_Logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
             this.tabControl_Page.SuspendLayout();
+            this.Activité.SuspendLayout();
             this.tableLayoutPanel_Head.SuspendLayout();
-            this.tableLayoutPanel_Search.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel_Search.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cda35_bd2DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aCTBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel_MainPage
@@ -271,6 +291,7 @@
             // 
             // Activité
             // 
+            this.Activité.Controls.Add(this.dataGridView1);
             this.Activité.Location = new System.Drawing.Point(4, 22);
             this.Activité.Name = "Activité";
             this.Activité.Padding = new System.Windows.Forms.Padding(3);
@@ -307,51 +328,41 @@
             this.tableLayoutPanel_Head.Size = new System.Drawing.Size(1080, 56);
             this.tableLayoutPanel_Head.TabIndex = 3;
             // 
-            // label_Title
+            // tableLayoutPanel2
             // 
-            this.label_Title.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label_Title.AutoSize = true;
-            this.label_Title.Location = new System.Drawing.Point(3, 7);
-            this.label_Title.Name = "label_Title";
-            this.label_Title.Size = new System.Drawing.Size(140, 13);
-            this.label_Title.TabIndex = 0;
-            this.label_Title.Text = "Gestion MCMP : Version 0.0";
-            this.label_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.30337F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.69663F));
+            this.tableLayoutPanel2.Controls.Add(this.label_SearchDate, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.dateTimePicker_Activité, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 31);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(686, 22);
+            this.tableLayoutPanel2.TabIndex = 3;
             // 
-            // tableLayoutPanel_Search
+            // label_SearchDate
             // 
-            this.tableLayoutPanel_Search.ColumnCount = 2;
-            this.tableLayoutPanel_Search.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.30337F));
-            this.tableLayoutPanel_Search.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.69663F));
-            this.tableLayoutPanel_Search.Controls.Add(this.textBox_Search, 1, 0);
-            this.tableLayoutPanel_Search.Controls.Add(this.label_Search, 0, 0);
-            this.tableLayoutPanel_Search.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_Search.Location = new System.Drawing.Point(695, 31);
-            this.tableLayoutPanel_Search.Name = "tableLayoutPanel_Search";
-            this.tableLayoutPanel_Search.RowCount = 1;
-            this.tableLayoutPanel_Search.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel_Search.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel_Search.Size = new System.Drawing.Size(382, 22);
-            this.tableLayoutPanel_Search.TabIndex = 1;
+            this.label_SearchDate.AutoSize = true;
+            this.label_SearchDate.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label_SearchDate.ForeColor = System.Drawing.Color.White;
+            this.label_SearchDate.Location = new System.Drawing.Point(241, 0);
+            this.label_SearchDate.Name = "label_SearchDate";
+            this.label_SearchDate.Size = new System.Drawing.Size(149, 22);
+            this.label_SearchDate.TabIndex = 1;
+            this.label_SearchDate.Text = "Accès Rapide aux Activités  : ";
+            this.label_SearchDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox_Search
+            // dateTimePicker_Activité
             // 
-            this.textBox_Search.Location = new System.Drawing.Point(221, 3);
-            this.textBox_Search.Name = "textBox_Search";
-            this.textBox_Search.Size = new System.Drawing.Size(158, 20);
-            this.textBox_Search.TabIndex = 0;
-            // 
-            // label_Search
-            // 
-            this.label_Search.AutoSize = true;
-            this.label_Search.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label_Search.ForeColor = System.Drawing.Color.White;
-            this.label_Search.Location = new System.Drawing.Point(103, 0);
-            this.label_Search.Name = "label_Search";
-            this.label_Search.Size = new System.Drawing.Size(112, 22);
-            this.label_Search.TabIndex = 1;
-            this.label_Search.Text = "Reccherche Rapide : ";
-            this.label_Search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.dateTimePicker_Activité.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePicker_Activité.Location = new System.Drawing.Point(396, 3);
+            this.dateTimePicker_Activité.Name = "dateTimePicker_Activité";
+            this.dateTimePicker_Activité.Size = new System.Drawing.Size(287, 20);
+            this.dateTimePicker_Activité.TabIndex = 2;
             // 
             // tableLayoutPanel1
             // 
@@ -365,7 +376,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(382, 22);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
@@ -391,41 +402,153 @@
             this.comboBox1.TabIndex = 1;
             this.comboBox1.Text = "Français";
             // 
-            // tableLayoutPanel2
+            // label_Title
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.30337F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.69663F));
-            this.tableLayoutPanel2.Controls.Add(this.label_SearchDate, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.dateTimePicker_Activité, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 31);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(686, 22);
-            this.tableLayoutPanel2.TabIndex = 3;
+            this.label_Title.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label_Title.AutoSize = true;
+            this.label_Title.Location = new System.Drawing.Point(3, 7);
+            this.label_Title.Name = "label_Title";
+            this.label_Title.Size = new System.Drawing.Size(140, 13);
+            this.label_Title.TabIndex = 0;
+            this.label_Title.Text = "Gestion MCMP : Version 0.0";
+            this.label_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label_SearchDate
+            // tableLayoutPanel_Search
             // 
-            this.label_SearchDate.AutoSize = true;
-            this.label_SearchDate.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label_SearchDate.ForeColor = System.Drawing.Color.White;
-            this.label_SearchDate.Location = new System.Drawing.Point(241, 0);
-            this.label_SearchDate.Name = "label_SearchDate";
-            this.label_SearchDate.Size = new System.Drawing.Size(149, 22);
-            this.label_SearchDate.TabIndex = 1;
-            this.label_SearchDate.Text = "Accès Rapide aux Activités  : ";
-            this.label_SearchDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tableLayoutPanel_Search.ColumnCount = 2;
+            this.tableLayoutPanel_Search.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.30337F));
+            this.tableLayoutPanel_Search.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.69663F));
+            this.tableLayoutPanel_Search.Controls.Add(this.textBox_Search, 1, 0);
+            this.tableLayoutPanel_Search.Controls.Add(this.label_Search, 0, 0);
+            this.tableLayoutPanel_Search.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Search.Location = new System.Drawing.Point(695, 31);
+            this.tableLayoutPanel_Search.Name = "tableLayoutPanel_Search";
+            this.tableLayoutPanel_Search.RowCount = 1;
+            this.tableLayoutPanel_Search.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Search.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel_Search.Size = new System.Drawing.Size(382, 22);
+            this.tableLayoutPanel_Search.TabIndex = 1;
             // 
-            // dateTimePicker_Activité
+            // textBox_Search
             // 
-            this.dateTimePicker_Activité.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker_Activité.Location = new System.Drawing.Point(396, 3);
-            this.dateTimePicker_Activité.Name = "dateTimePicker_Activité";
-            this.dateTimePicker_Activité.Size = new System.Drawing.Size(287, 20);
-            this.dateTimePicker_Activité.TabIndex = 2;
+            this.textBox_Search.Location = new System.Drawing.Point(221, 3);
+            this.textBox_Search.Name = "textBox_Search";
+            this.textBox_Search.Size = new System.Drawing.Size(158, 20);
+            this.textBox_Search.TabIndex = 0;
+            // 
+            // label_Search
+            // 
+            this.label_Search.AutoSize = true;
+            this.label_Search.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label_Search.ForeColor = System.Drawing.Color.White;
+            this.label_Search.Location = new System.Drawing.Point(103, 0);
+            this.label_Search.Name = "label_Search";
+            this.label_Search.Size = new System.Drawing.Size(112, 22);
+            this.label_Search.TabIndex = 1;
+            this.label_Search.Text = "Reccherche Rapide : ";
+            this.label_Search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idactDataGridViewTextBoxColumn,
+            this.nomDataGridViewTextBoxColumn,
+            this.datedebutDataGridViewTextBoxColumn,
+            this.datefinDataGridViewTextBoxColumn,
+            this.dateinscLimitDataGridViewTextBoxColumn,
+            this.daterdvDataGridViewTextBoxColumn,
+            this.lieurdvDataGridViewTextBoxColumn,
+            this.lieudestiDataGridViewTextBoxColumn,
+            this.fKtypeactDataGridViewTextBoxColumn,
+            this.fKadhcreateurDataGridViewTextBoxColumn,
+            this.fKadhresponDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.aCTBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(1, 78);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1071, 436);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // cda35_bd2DataSet1
+            // 
+            this.cda35_bd2DataSet1.DataSetName = "cda35_bd2DataSet1";
+            this.cda35_bd2DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // aCTBindingSource
+            // 
+            this.aCTBindingSource.DataMember = "ACT";
+            this.aCTBindingSource.DataSource = this.cda35_bd2DataSet1;
+            // 
+            // aCTTableAdapter
+            // 
+            this.aCTTableAdapter.ClearBeforeFill = true;
+            // 
+            // idactDataGridViewTextBoxColumn
+            // 
+            this.idactDataGridViewTextBoxColumn.DataPropertyName = "Id_act";
+            this.idactDataGridViewTextBoxColumn.HeaderText = "N°Activité";
+            this.idactDataGridViewTextBoxColumn.Name = "idactDataGridViewTextBoxColumn";
+            // 
+            // nomDataGridViewTextBoxColumn
+            // 
+            this.nomDataGridViewTextBoxColumn.DataPropertyName = "nom";
+            this.nomDataGridViewTextBoxColumn.HeaderText = "Intitulé";
+            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
+            // 
+            // datedebutDataGridViewTextBoxColumn
+            // 
+            this.datedebutDataGridViewTextBoxColumn.DataPropertyName = "date_debut";
+            this.datedebutDataGridViewTextBoxColumn.HeaderText = "Début";
+            this.datedebutDataGridViewTextBoxColumn.Name = "datedebutDataGridViewTextBoxColumn";
+            // 
+            // datefinDataGridViewTextBoxColumn
+            // 
+            this.datefinDataGridViewTextBoxColumn.DataPropertyName = "date_fin";
+            this.datefinDataGridViewTextBoxColumn.HeaderText = "Fin";
+            this.datefinDataGridViewTextBoxColumn.Name = "datefinDataGridViewTextBoxColumn";
+            // 
+            // dateinscLimitDataGridViewTextBoxColumn
+            // 
+            this.dateinscLimitDataGridViewTextBoxColumn.DataPropertyName = "date_inscLimit";
+            this.dateinscLimitDataGridViewTextBoxColumn.HeaderText = "Limite inscription";
+            this.dateinscLimitDataGridViewTextBoxColumn.Name = "dateinscLimitDataGridViewTextBoxColumn";
+            // 
+            // daterdvDataGridViewTextBoxColumn
+            // 
+            this.daterdvDataGridViewTextBoxColumn.DataPropertyName = "date_rdv";
+            this.daterdvDataGridViewTextBoxColumn.HeaderText = "Date RdV";
+            this.daterdvDataGridViewTextBoxColumn.Name = "daterdvDataGridViewTextBoxColumn";
+            // 
+            // lieurdvDataGridViewTextBoxColumn
+            // 
+            this.lieurdvDataGridViewTextBoxColumn.DataPropertyName = "lieu_rdv";
+            this.lieurdvDataGridViewTextBoxColumn.HeaderText = "Lieu RdV";
+            this.lieurdvDataGridViewTextBoxColumn.Name = "lieurdvDataGridViewTextBoxColumn";
+            // 
+            // lieudestiDataGridViewTextBoxColumn
+            // 
+            this.lieudestiDataGridViewTextBoxColumn.DataPropertyName = "lieu_desti";
+            this.lieudestiDataGridViewTextBoxColumn.HeaderText = "Destination";
+            this.lieudestiDataGridViewTextBoxColumn.Name = "lieudestiDataGridViewTextBoxColumn";
+            // 
+            // fKtypeactDataGridViewTextBoxColumn
+            // 
+            this.fKtypeactDataGridViewTextBoxColumn.DataPropertyName = "FK_type_act";
+            this.fKtypeactDataGridViewTextBoxColumn.HeaderText = "FK_type_act";
+            this.fKtypeactDataGridViewTextBoxColumn.Name = "fKtypeactDataGridViewTextBoxColumn";
+            // 
+            // fKadhcreateurDataGridViewTextBoxColumn
+            // 
+            this.fKadhcreateurDataGridViewTextBoxColumn.DataPropertyName = "FK_adh_createur";
+            this.fKadhcreateurDataGridViewTextBoxColumn.HeaderText = "FK_adh_createur";
+            this.fKadhcreateurDataGridViewTextBoxColumn.Name = "fKadhcreateurDataGridViewTextBoxColumn";
+            // 
+            // fKadhresponDataGridViewTextBoxColumn
+            // 
+            this.fKadhresponDataGridViewTextBoxColumn.DataPropertyName = "FK_adh_respon";
+            this.fKadhresponDataGridViewTextBoxColumn.HeaderText = "FK_adh_respon";
+            this.fKadhresponDataGridViewTextBoxColumn.Name = "fKadhresponDataGridViewTextBoxColumn";
             // 
             // FormApplication
             // 
@@ -440,6 +563,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Application de Gestion MCMP";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormApplication_FormClosing);
+            this.Load += new System.EventHandler(this.FormApplication_Load);
             this.tableLayoutPanel_MainPage.ResumeLayout(false);
             this.tableLayoutPanel_MenuAdmin.ResumeLayout(false);
             this.groupBox_GestionParam.ResumeLayout(false);
@@ -449,14 +573,18 @@
             this.flowLayoutPanel_Logo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).EndInit();
             this.tabControl_Page.ResumeLayout(false);
+            this.Activité.ResumeLayout(false);
             this.tableLayoutPanel_Head.ResumeLayout(false);
             this.tableLayoutPanel_Head.PerformLayout();
-            this.tableLayoutPanel_Search.ResumeLayout(false);
-            this.tableLayoutPanel_Search.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel_Search.ResumeLayout(false);
+            this.tableLayoutPanel_Search.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cda35_bd2DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aCTBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -493,5 +621,20 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label_SearchDate;
         private System.Windows.Forms.DateTimePicker dateTimePicker_Activité;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private cda35_bd2DataSet1 cda35_bd2DataSet1;
+        private System.Windows.Forms.BindingSource aCTBindingSource;
+        private cda35_bd2DataSet1TableAdapters.ACTTableAdapter aCTTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idactDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datedebutDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datefinDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateinscLimitDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn daterdvDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lieurdvDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lieudestiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fKtypeactDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fKadhcreateurDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fKadhresponDataGridViewTextBoxColumn;
     }
 }
